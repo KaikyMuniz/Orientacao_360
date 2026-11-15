@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: linear-gradient(100deg, #407BFF, #3363CD);
+    display: grid;
+    place-items: center;
+}
+
+form{
+    background-color: #ebebeb;
+    box-shadow: #254b9ce1 4px 2px 0px 2px;
+    border-radius: 10px;
+    padding: 3% 5% 4% 5%;
+    max-width: 90vw;
+    max-height: 80vh;
+    place-items: center;
+    display: grid;
+}
+
+form h1{
+    font-family: "Poppins";
+    text-align: center;
+    font-size: 5vh;
+}
+
+form label{
+    color: #3d33cd;
+    font-family: "Poppins";
+    margin-bottom: 5px;
+    font-size: 2.5vh;
+    cursor: text;
+}
+
+div .aviso{
+    font-family: "Poppins";
+    font-weight: 900;
+    color: red;
+    font-size: 2.5vh;
+    display: none;
+}
+
+form #user{
+    border-radius: 5px;
+    border-color: #3363CD;
+    padding: 1vh;
+    min-width: 20vw;
+    max-width: 100vw;
+    font-family: "Poppins";
+    background-color: transparent;
+}
+
+form #recuperar{
+    border-radius: 5px;
+    border-color: #3363CD;
+    padding: 1vh;
+    min-width: 20vw;
+    max-width: 100vw;
+    font-family: "Poppins";
+    background-color: transparent;
+}
+
+.center{
+    text-align: center;
+}
+
+form #submit{
+    background-image: linear-gradient(100deg, #407BFF, #3363CD);
+    color: white;
+    min-height: 7.5vh;
+    min-width: 10vw;
+    border-radius: 10px;
+    border-color: #3363CD;
+    font-family: "Poppins";
+    font-size: 2.7vh;
+    text-transform: uppercase;
+    transition: 900ms ease;
+}
+
+form #submit:hover{
+    background-image: linear-gradient(100deg, #3b74f0, #305bb8);
+    cursor: pointer;
+    box-shadow: #3464cee1 -2px 2px 2px 1px;
+}
+
+.ou{
+    font-size: 3vh;
+}
+
+.realize{
+    color: black;
+    font-size: 3vh;
+}
+
+form a{
+    color: #3d33cd;
+    text-decoration: none;
+    font-family: "Poppins";
+    font-size: 3.5vh;
+    transition: 900ms ease-in-out;
+    font-weight: bold;
+}
+
+form a:hover{
+    color: #564bf0;
+}

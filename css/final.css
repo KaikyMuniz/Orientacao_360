@@ -1,0 +1,76 @@
+body{
+    background-color: rgba(65, 57, 198, 1);
+    margin: 0;
+    padding: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    place-items: center;
+    justify-content: space-evenly;
+}
+
+.personagem_container{
+    min-width: 50vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
+img{
+    height: 70vh;
+    filter: invert(1);
+}
+
+.texto_container{
+    min-width: 50vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
+.text{
+    background-color: #040029da;
+    font-family: "Poppins";
+    font-size: 0.7em;
+    color: #fff;
+    height: 90vh;
+    width: 40vw;
+    padding: 10px;
+    border-radius: 20px 0 20px 0;
+}
+
+#textoDigitacao {
+    white-space: pre-line;
+    margin: 0 auto;
+    font-family: "Poppins";
+    font-size: 1.8em;
+    color: #fff;
+}
+
+#textoDigitacao:after {
+    content: "|"; 
+    animation: blink-caret .5s step-end infinite;
+}
+
+@keyframes blink-caret {
+    from, to {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 999px) {
+    .personagem_container{
+        display: none;
+    }
+
+    .texto_container, .text{
+        width: 90vw;
+        height: max-content;
+    }
+}

@@ -1,0 +1,146 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: linear-gradient(100deg, #407BFF, #3363CD);
+    display: grid;
+    place-items: center;
+}
+
+form{
+    background-color: #ebebeb;
+    box-shadow: #254b9ce1 4px 2px 0px 2px;
+    border-radius: 10px;
+    padding: 2% 3% 2% 3%;
+    min-width: 200px;
+    max-width: 270px;
+    min-height: 300px;
+    max-height: 500px;
+    place-items: center;
+    display: grid;
+}
+
+form h1{
+    font-family: "Poppins";
+    text-align: center;
+    font-size: 2.1rem;
+}
+
+form label{
+    color: #3d33cd;
+    font-family: "Poppins";
+    font-size: 1em;
+    cursor: text;
+}
+
+div .aviso{
+    width: 200px;
+    font-family: "Poppins";
+    font-weight: 900;
+    color: red;
+    font-size: 14px;
+    display: none;
+}
+
+form #user{
+    border-radius: 5px;
+    border-color: #3363CD;
+    padding: 7px;
+    width: 200px;
+    font-family: "Poppins";
+    background-color: transparent;
+}
+
+.center{
+    text-align: center;
+}
+
+form #submit{
+    background-image: linear-gradient(100deg, #407BFF, #3363CD);
+    color: white;
+    height: 52px;
+    width: 120px;
+    border-radius: 10px;
+    border-color: #3363CD;
+    font-family: "Poppins";
+    font-size: 17px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    transition: 900ms ease;
+}
+
+form #submit:hover{
+    background-image: linear-gradient(100deg, #3b74f0, #305bb8);
+    cursor: pointer;
+    box-shadow: #3464cee1 -2px 2px 2px 1px;
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 340px){
+
+    body{
+        background-image: linear-gradient(100deg, #407BFF, #407BFF)
+    }
+
+    form{
+        padding-top: 25px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 50px;
+        width: 250px;
+        height: 260px;
+    }
+    
+    form h1{
+        font-size: 30px;
+    }
+    
+    form label{
+        font-size: 16px;
+    }
+    
+    form #user{
+        padding: 7px;
+        width: 200px;
+    }
+    
+    form #submit{
+        height: 52px;
+        width: 120px;
+        font-size: 17px;
+    }
+}
+
+
+
+@media screen and (min-width: 341px) and (max-width: 380px){
+
+    body{
+        background-image: linear-gradient(100deg, #407BFF, #407BFF)
+    }
+
+    form{
+        padding: 5% 10% 5% 10%;
+        width: 270px;
+        height: 270px;
+    }
+    
+    form h1{
+        font-size: 30px;
+    }
+    
+    form label{
+        font-size: 16px;
+    }
+    
+    form #user{
+        padding: 7px;
+        width: 200px;
+    }
+    
+    form #submit{
+        height: 52px;
+        width: 120px;
+        font-size: 17px;
+    }
+}

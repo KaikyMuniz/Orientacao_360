@@ -1,0 +1,224 @@
+body{
+    margin: 0;
+    padding: 0;
+    min-width: 100vw;
+    overflow: hidden;
+}
+
+.container{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    min-width: 50vw;
+    min-height: 101vh;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(100deg, #407BFF, #3363CD);
+    border-top-left-radius: 80px;
+}
+
+form{
+    background-image: linear-gradient(50deg, #f1f1f1, #ececec);
+    box-shadow: #3364cde1 -2px 3px 0px 2px;
+    border-radius: 10px;
+    padding: 1% 5% 1% 5%;
+    max-width: 30vw;
+}
+
+.image{
+    border-bottom-right-radius: 80px;
+    background-color: #f1f1f1;
+    min-height: 100vh;
+    min-width: 50vw;
+    place-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.image img{
+    height: 650px;
+}
+
+form h1{
+    font-family: "Poppins";
+    font-size: 250%;
+    text-align: center;
+}
+
+form label{
+    font-family: "Poppins";
+    font-size: 100%;
+    cursor: text;
+}
+
+div .aviso{
+    font-family: "Poppins";
+    font-weight: 900;
+    color: red;
+    font-size: 90%;
+}
+
+form input::placeholder{
+    font-family: "Poppins";
+}
+
+form #user{
+    border-radius: 5px;
+    border-color: #3363CD;
+    padding: 7px;
+    width: 20vw;
+    background-color: transparent;
+}
+
+form #nasc{
+    border-radius: 5px;
+    border-color: #3363CD;
+    padding: 5px;
+    width: 11vw;
+    background-color: transparent;
+    font-family: "Poppins";
+    letter-spacing: 1px;
+}
+
+form p {
+    font-family: "Poppins";
+    font-size: 90%;
+}
+
+form #recuperar{
+    border-radius: 5px;
+    border-color: #3363CD;
+    padding: 7px;
+    width: 20vw;
+    background-color: transparent;
+}
+
+form #senha{
+    border-radius: 5px;
+    border-color: #3363CD;
+    padding: 7px;
+    width: 20vw;
+    background-color: transparent;
+    margin-bottom: 5px;
+}
+
+form #visible_senha{
+    width: 1.7rem;
+    position: absolute;
+    margin-left: -35px;
+    margin-top: 1px;
+}
+
+form #visible_senha:hover{
+    cursor: pointer;
+}
+
+form a{
+    color: #3d33cd;
+    text-decoration: none;
+    font-family: "Poppins";
+    font-size: 100%;
+    transition: 900ms ease-in-out;
+}
+
+form a:hover{
+    color: #564bf0;
+}
+
+form .center2{
+    margin-top: -10px;
+    text-align: center;
+}
+
+form #submit{
+    background-image: linear-gradient(100deg, #407BFF, #3363CD);
+    color: white;
+    height: 52px;
+    width: 130px;
+    letter-spacing: 0.5px;
+    border-radius: 10px;
+    border-color: #3363CD;
+    margin-bottom: 5px;
+    font-family: "Poppins";
+    font-size: 17px;
+    text-transform: uppercase;
+    transition: 900ms ease;
+}
+
+form #submit:hover{
+    background-image: linear-gradient(100deg, #3b74f0, #305bb8);
+    cursor: pointer;
+    font-size: 18px;
+}
+
+div .cadastrado{
+    color: #3363CD;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Poppins";
+    margin-bottom: 20px;
+}
+
+.conecta{
+    text-align: center;
+}
+
+@media (max-width: 999px) {
+
+    body{
+        overflow: scroll;
+    }
+
+    .center{
+        border-top-left-radius: 0;
+        min-width: 100vw;
+    }
+
+    form{
+        padding: 15px 5px 15px 5px;
+        margin: 10px 0 10px 0;
+        max-width: 90vw;
+        text-align: center;
+        height: max-content;
+    }
+
+    .image{
+        display: none;
+    }
+    
+    form #user{
+        padding: 5px;
+        width: 200px;
+    }
+
+    form #nasc{
+        padding: 2px;
+        width: 130px;
+    }
+
+    form #email{
+        padding: 5px;
+        width: 200px;
+    }
+
+    form #recuperar{
+        padding: 5px;
+        width: 200px;
+    }
+
+    form #senha{
+        padding: 5px;
+        width: 200px;
+    }
+}

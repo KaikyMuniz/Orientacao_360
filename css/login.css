@@ -1,0 +1,507 @@
+body{
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+.container{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    place-items: center;
+    background-color: white;
+}
+
+.image{
+    border-bottom-left-radius: 80px;
+    background-color: #ebebeb;
+    height: 100vh;
+    width: 100vw;
+    place-items: center;
+    display: grid;
+}
+
+.image img{
+    height: 650px;
+}
+
+.center{
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(100deg, #407BFF, #3363CD);
+    border-top-right-radius: 80px;
+}
+
+form{
+    background-color: #ebebeb;
+    box-shadow: #3364cde1 4px 2px 0px 2px;
+    border-radius: 10px;
+    padding-top: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    width: 300px;
+    height: 450px;
+}
+
+form h1{
+    font-family: "Poppins";
+    font-size: 50px;
+    text-align: center;
+    color: black;
+}
+
+div .aviso{
+    font-family: "Poppins";
+    font-weight: 900;
+    color: rgb(255, 0, 0);
+    font-size: 14px;
+    display: none;
+}
+
+form #user{
+    border-radius: 5px;
+    border-color: #3363CD;
+    padding: 5px;
+    width: 250px;
+    background-color: transparent;
+}
+
+form #senha{
+    border-radius: 5px;
+    border-color: #3363CD;
+    padding: 5px;
+    width: 250px;
+    background-color: transparent;
+    margin-bottom: 5px;
+}
+
+form #visible_senha{
+    position: absolute;
+    margin-left: -33px;
+    margin-top: 3.8px;
+    width: 1.6rem;
+    cursor: pointer;
+}
+
+form input::placeholder{
+    font-family: "Poppins";
+}
+
+form a{
+    color: #3d33cd;
+    text-decoration: none;
+    font-family: "Poppins";
+    transition: 900ms ease-in-out;
+}
+
+form a:hover{
+    color: #564bf0;
+}
+
+form .center2{
+    margin-top: 5px;
+    text-align: center;
+}
+
+form #submit{
+    background-image: linear-gradient(100deg, #407BFF, #3363CD);
+    color: white;
+    height: 52px;
+    width: 120px;
+    border-radius: 10px;
+    border-color: #3363CD;
+    font-family: "Poppins";
+    font-size: 17px;
+    text-transform: uppercase;
+    transition: 900ms ease;
+}
+
+form #submit:hover{
+    background-image: linear-gradient(100deg, #3b74f0, #305bb8);
+    cursor: pointer;
+    font-size: 19px;
+}
+
+form label{
+    color: #3d33cd;
+    font-family: "Poppins";
+    margin-bottom: 5px;
+    font-size: 17px;
+}
+
+form label:hover{
+    cursor: text;
+}
+
+.icons{
+    margin-top: 10px;
+    display: flex;
+    place-items: center;
+}
+
+.icons img{
+    height: 35px;
+}
+
+.icons img:hover{
+    cursor: pointer;
+}
+
+.icons hr{
+    border-color: #3d33cd;
+    height: 25px;
+}
+
+@media screen and (min-width: 200px) and (max-width: 340px) {
+
+    body{
+        position: relative;
+        background-image: linear-gradient(100deg, #407BFF, #3363CD);
+    }
+
+    .center{
+        border-top-right-radius: 0;
+    }
+    
+    form{
+        width: 250px;
+        padding: 10px 10px 10px 10px;
+        height: max-content;
+    }    
+
+    .image{
+        display: none;
+    }
+    
+    form h1{
+        font-size: 30px;
+    }
+
+    form label{
+    font-size: 15px;
+    }
+
+    form #user{
+    padding: 5px;
+    width: 200px;
+    }
+
+    form #senha{
+    padding: 5px;
+    width: 200px;
+    }
+
+    form span{
+        display: flex;
+        height: 34px;
+        width: 300px;
+    }
+
+    form #visible_senha{
+        margin-left: 188px;
+        margin-top: 3px;
+        width: 1.4rem;
+    }
+
+    form a{
+    font-size: 13px;
+    }
+
+    form #submit{
+    height: 40px;
+    width: 80px;
+    font-size: 16px;
+    }
+
+    .icons img{
+        height: 25px;
+    }
+
+    .icons hr{
+        height: 15px;
+    }
+}
+
+
+
+
+@media screen and (min-width: 341px) and (max-width: 580px) {
+
+    .center{
+        border-top-right-radius: 0px;
+    }
+    
+    form{
+        padding-bottom: 10px;
+        width: 230px;
+        height: max-content;
+    }    
+
+    .image{
+        display: none;
+    }
+    
+    form h1{
+        font-size: 35px;
+    }
+
+    form label{
+    font-size: 16px;
+    }
+
+    form #user{
+    padding: 5px;
+    width: 215px;
+    }
+
+    form #senha{
+    padding: 5px;
+    width: 215px;
+    }
+
+    form #visible_senha{
+        margin-left: 195px;
+        margin-top: -32px;
+    }
+
+    form a{
+    font-size: 14px;
+    }
+
+    form #submit{
+    height: 50px;
+    width: 100px;
+    font-size: 17px;
+    }
+
+    .icons{
+        margin-top: 7px;
+    }
+
+    .icons img{
+        height: 30px;
+    }
+
+    .icons hr{
+        height: 20px;
+    }
+}
+
+
+@media screen and (min-width: 581px) and (max-width: 980px) {
+
+    .center{
+        border-top-right-radius: 0;
+    }
+    
+    form{
+        padding-top: 50px;
+        padding-left: 55px;
+        padding-right: 55px;
+        padding-bottom: 55px;
+        width: 340px;
+        height: 480px;
+    }    
+
+    .image{
+        display: none;
+    }
+    
+    form h1{
+        font-size: 43px;
+    }
+
+    form label{
+    font-size: 20px;
+    }
+
+    form #user{
+    padding: 7px;
+    width: 280px;
+    }
+
+    form #senha{
+    padding: 7px;
+    width: 280px;
+    }
+
+    form #visible_senha{
+        margin-top: 4px;
+    }
+
+    form a{
+    font-size: 17px;
+    }
+
+    form #submit{
+    height: 60px;
+    width: 150px;
+    font-size: 20px;
+    }
+
+    .icons img{
+        height: 40px;
+    }
+
+    .icons hr{
+        height: 30px;
+    }
+}
+
+
+
+
+@media screen and (min-width: 981px) and (max-width: 1201px) {
+
+    .image img{
+        height: 500px;
+    }
+
+    form{
+        width: 300px;
+        height: 480px;
+    }
+
+    form h1{
+        font-size: 50px;
+    }
+
+    form #user{
+        padding: 7px;
+        width: 250px;
+    }
+
+    form #senha{
+        padding: 7px;
+        width: 250px;
+    }
+
+    form #submit{
+        height: 52px;
+        width: 120px;
+        font-size: 17px;
+    }
+
+    form label{
+        font-size: 17px;
+    }
+
+    .icons img{
+        height: 35px;
+    }
+
+    .icons hr{
+        height: 25px;
+    }
+}
+
+
+
+@media screen and (min-width: 1201px) and (max-width: 1380px) {
+
+    .image img{
+        height: 650px;
+    }
+
+    form{
+        width: 300px;
+        height: 480px;
+    }
+
+    form h1{
+        font-size: 50px;
+
+    }
+
+    form #user{
+        padding: 7px;
+        width: 250px;
+    }
+
+    form #senha{
+        padding: 7px;
+        width: 250px;
+    }
+
+    form #submit{
+        height: 52px;
+        width: 120px;
+        font-size: 17px;
+    }
+
+    form label{
+        font-size: 17px;
+    }
+
+    .icons img{
+        height: 35px;
+    }
+
+    .icons hr{
+        height: 25px;
+    }
+}
+
+
+
+@media screen and (min-width: 1381px) and (max-width: 2400px) {
+
+    .image img{
+        height: 750px;
+    }
+
+    .center{
+        border-top-right-radius: 80px;
+    }
+
+    form{
+        width: 380px;
+        height: 520px;
+    }
+
+    form h1{
+        font-size: 55px;
+    }
+
+    form #user{
+        padding: 9px;
+        width: 320px;
+    }
+
+    form #senha{
+        padding: 9px;
+        width: 320px;
+    }
+
+    form #visible_senha{
+        margin-top: 4.7px;
+        margin-left: -35px;
+        width: 1.8rem;
+    }
+
+    form a{
+        font-size: 20px;
+    }
+
+    form #submit{
+        height: 65px;
+        width: 150px;
+        font-size: 23px;
+    }
+
+    form label{
+        font-size: 21px;
+    }
+
+    .icons img{
+        height: 37px;
+    }
+
+    .icons hr{
+        height: 30px;
+    }
+}

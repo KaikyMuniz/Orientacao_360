@@ -1,0 +1,401 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: rgba(79, 4, 255, 0.699);
+}
+
+.slideshow-container {
+    position: relative;
+    min-width: 100%;
+    min-height: 100vh; /* Defina a altura desejada para o slideshow */
+    display: flex;
+    align-items: center;
+}
+
+.img_slide_lado{
+    width: 30vw;
+    height: 65vh;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: rgba(34, 13, 85, 0.6) 7px 7px 0px 0px;
+    margin-right: 40px;
+}
+
+.img_left1, .img_left2, .img_left3, .img_left4, .img_left5, .img_left6 {
+    object-fit: cover;
+    height: max-content;
+    display: flex;
+    place-items: center;
+    justify-content: right;
+}
+
+.img_left1_responsive, .img_left2_responsive, .img_left3_responsive, 
+.img_left4_responsive, .img_left5_responsive, .img_left6_responsive {
+    object-fit: cover;
+    place-items: center;
+    justify-content: right;
+    display: none;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    opacity: 0;
+    z-index: 1;
+    display: none;
+}
+
+@keyframes carregarSlide {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.slide.active {
+    z-index: 2;
+    display: block;
+    animation: carregarSlide 0.7s ease-in-out forwards;
+}
+
+.slide .fundo1 {
+    background-color: rgb(100, 37, 247);
+    width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    filter: grayscale(0.2);
+}
+
+.slide .fundo2 {
+    background-color: rgb(83, 28, 211);    
+    width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    filter: grayscale(0.2);
+}
+
+.slide .fundo3 {
+    background-color: rgb(60, 11, 175);
+    width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    filter: grayscale(0.2);
+}
+
+.slide .fundo4 {
+    background-color: rgb(42, 5, 128);
+    width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    filter: grayscale(0.2);
+}
+
+.slide .fundo5 {
+    background-color: rgb(100, 37, 247);
+    width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    filter: grayscale(0.2);
+}
+
+.slide .fundo6 {
+    background-color: rgb(83, 28, 211);
+    width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    filter: grayscale(0.2);
+}
+
+.slide .fundo7 {
+    background-color: rgb(60, 11, 175);
+    width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    filter: grayscale(0.2);
+}
+
+.slide .fundo8 {
+    background-color: rgb(42, 5, 128);
+    width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    filter: grayscale(0.2);
+}
+
+.slide .fundo9 {
+    background-color: rgb(100, 37, 247);
+    width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    filter: grayscale(0.2);
+}
+
+.slide .fundo10 {
+    background-color: rgb(83, 28, 211);
+    width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    filter: grayscale(0.2);
+}
+
+.slide .fundo11 {
+    background-color: rgb(60, 11, 175);
+    width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    filter: grayscale(0.2);
+}
+
+.slide .fundo12 {
+    background-color: rgb(42, 5, 128);
+    width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    filter: grayscale(0.2);
+}
+
+.slide .fundo13 {
+    background-color: rgb(100, 37, 247);
+    width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+    display: flex;
+    justify-content: space-between;
+    filter: grayscale(0.2);
+}
+
+.slide .fundo14 {
+    background-color: rgb(83, 28, 211);
+    width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    filter: grayscale(0.2);
+}
+
+.slide .fundo15 {
+    background-color: rgb(60, 11, 175);
+    width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+    display: flex;
+    justify-content: space-between;
+    filter: grayscale(0.2);
+}
+
+p{
+    cursor: text;
+}
+
+.slide-text1{
+    margin-left: 1%;
+    width: 60vw;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    margin-right: 20px;
+    color: #fff;
+}
+
+.slide-text3, .slide-text5, .slide-text7, .slide-text9, .slide-text11,
+.slide-text13, .slide-text15{
+    margin-left: 1%;
+    height: max-content;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    margin-right: 20px;    
+    color: #fff;
+}
+
+
+.slide-text2, .slide-text4, .slide-text6, .slide-text8, .slide-text10,
+.slide-text12, .slide-text14{
+    height: max-content;
+    display: flex;
+    min-width: 95vw;
+    flex-direction: column;
+    text-align: justify;
+    margin: 50px 20px 0 1%;
+    color: #fff;
+}
+
+h2 {
+    font-size: 3rem;
+    font-family: "Poppins";
+    color: #FFF;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+h3{
+    font-family: "Poppins";
+    font-size: 2.3rem;
+    margin: 0;
+    text-align: left;
+}
+
+p {
+    font-size: 160%;
+    margin-left: 1%;
+    font-family: "Poppins";
+}
+
+span label{
+    font-size: 26px;
+    color: white;
+    font-family: "Poppins";
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.slides {
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.radio-btn {
+    display: none;
+}
+
+.manual-navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+
+.manual-btn {
+    border: 2px solid #FFF;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    margin: 0 5px;
+}
+
+.manual-btn:hover,
+input[type="radio"]:checked + label {
+    background-color: white;
+}
+
+a{
+    color: white;
+    font-family: "Poppins";
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: left;
+    cursor: pointer;
+}
+
+@media (max-width: 999px) {
+    .slide-text1{
+        width: 98vw;
+        margin-top: 50px;
+    }   
+    
+    .slide-text3, .slide-text5, .slide-text7, .slide-text9, .slide-text11,
+    .slide-text13, .slide-text15{
+        width: 98vw;
+        margin-top: 50px;
+    }
+
+
+    .slide-text2, .slide-text4, .slide-text6, .slide-text8, .slide-text10,
+    .slide-text12, .slide-text14{
+        height: max-content;
+        min-width: 95vw;
+        margin: 50px 20px 0 1%;
+    }
+
+    .img_slide_lado{
+        width: 45vw;
+        height: 30vh;
+        margin-right: 0;
+    }
+
+    .manual-navigation {
+        position: absolute;
+        bottom: 20px;
+        top: 20px;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        z-index: 2;
+        height: 2vh;
+    }
+
+    .img_left1, .img_left2, .img_left3, .img_left4, .img_left5, .img_left6 {
+        display: none;
+    }
+    
+    .img_left1_responsive, .img_left2_responsive, .img_left3_responsive, 
+    .img_left4_responsive, .img_left5_responsive, .img_left6_responsive {
+        display: flex;
+        width: 100%;
+        place-items: center;
+        justify-content: center;
+    }
+}
